@@ -107,7 +107,7 @@
   <property>
     <name>fs.s3a.aws.credentials.provider</name>
     <description>The credential provider type.</description>
-    <value>com.amazonaws.auth.WebIdentityTokenCredentialsProvider</value>
+    <value>software.amazon.awssdk.auth.credentials.WebIdentityTokenFileCredentialsProvider</value>
   </property>
   {{- else -}}
     {{ fail "Unrecognized AWS authentication mode." }}
